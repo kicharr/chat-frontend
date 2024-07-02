@@ -1,0 +1,12 @@
+{
+  "authorization": {
+    "title": "Enter in your account",
+    "form": {
+      "login": "login",
+      "password": "password",
+      "button": "Login",
+      "message": "Haven't account?",
+      "registration_link": "Go registration now!"
+    }
+  }
+}

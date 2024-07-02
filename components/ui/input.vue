@@ -9,11 +9,11 @@ const props = defineProps<UIInputPropsType>();
 
 const emit = defineEmits(['update:modelValue'])
 
-const data = useVModel(props, 'modelValue', emit);
+const value = useVModel(props, 'modelValue', emit);
 </script>
 
 <template>
-  <input v-model="data" class="input">
+  <input v-model="value" class="input">
 </template>
 
 <style scoped>

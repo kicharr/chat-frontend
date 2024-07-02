@@ -14,6 +14,12 @@ const emits = defineEmits(['registration']);
 
 const message = useMessage();
 
+const isRepeatPasswordInputShown: Ref<UnwrapRef<boolean>> = ref(false);
+
+watch(userData.value, (val) => {
+  val.password && val.password.length >= 6 ? isRepeatPasswordInputShown.value = true : isRepeatPasswordInputShown.value = false;
+});
+
 function registration() {
   if (!userData.value.login) {
     message.warning('Введите логин');
@@ -90,10 +96,12 @@ function registration() {
                     class="input"
           />
         </div>
+        <span v-if="userData.password" class="input-tooltip"
+              :class="{'input-tooltip--valid': userData.password.length >= 6}">Не менее 6 символов</span>
       </div>
 
       <Transition>
-        <div>
+        <div v-if="isRepeatPasswordInputShown">
           <div class="flex items-center justify-between">
             <label for="repeat-password" class="block text-sm font-medium leading-6 text-gray-900">Подтвердите
               пароль
@@ -130,6 +138,13 @@ function registration() {
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+.input-tooltip {
+  font-size: 10px;
+  color: red;
 
+  &--valid {
+    color: grey;
+  }
+}
 </style>

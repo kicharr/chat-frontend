@@ -1,7 +1,30 @@
 export default defineNuxtConfig({
     ssr: true,
+    devServer: {
+        port: 8080
+    },
     devtools: {enabled: true},
-    modules: ['@pinia/nuxt'],
+    modules: [
+        '@pinia/nuxt',
+        ["@nuxtjs/i18n", {
+            vueI18n: './i18n.config.ts',
+            locales: [
+                {
+                    id: 0,
+                    code: 'ru',
+                    name: 'Русский',
+                    iso: 'ru-RU'
+                },
+                {
+                    id: 1,
+                    code: 'en',
+                    name: 'English',
+                    iso: 'en-US'
+                },
+            ],
+            defaultLocale: 'ru'
+        }]
+    ],
     postcss: {
         plugins: {
             tailwindcss: {},

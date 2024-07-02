@@ -3,5 +3,5 @@ export interface AppConfigType {
 }
 
 export const appConfig: AppConfigType = {
-    domain: 'http://10.12.142.49:3000'
+    domain: 'http://192.168.0.107:3000'
 }

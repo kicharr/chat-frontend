@@ -13,3 +13,8 @@ export interface UserRegistrationDataType {
     password: string
     repeatPassword?: string
 }
+
+export interface UserAuthorizationType {
+    login: string
+    password: string
+}
