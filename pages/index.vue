@@ -1,5 +1,7 @@
 <script setup lang="ts">
-
+definePageMeta({
+  middleware: "user-token-verification"
+});
 </script>
 
 <template>

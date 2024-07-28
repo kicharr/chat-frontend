@@ -7,6 +7,30 @@
       "button": "Авторизоваться",
       "message": "Нет аккаунта?",
       "registration_link": "Зарегестрироваться сейчас"
+    },
+    "messages" : {
+      "invalid-login": "Не валидный логин",
+      "invalid-password": "Не валидный пароль",
+      "success": "Заходим"
+    }
+  },
+  "registration": {
+    "title": "Создайте свой акканут",
+    "form": {
+      "login": "Логин",
+      "name":"Ваше имя",
+      "password": "Пароль",
+      "password-repeat": "Подтвердите пароль",
+      "password-hint": "Не менее 6 символов",
+      "button": "Зарегестрироваться",
+      "message": "Есть аккаунт?",
+      "authorization_link": "Войти"
+    },
+    "messages" : {
+      "invalid-login": "Не валидный логин",
+      "invalid-name": "Не валидное имя",
+      "invalid-password": "Не валидный пароль",
+      "success": "Всё гуд!"
     }
   }
 }

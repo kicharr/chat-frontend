@@ -14,6 +14,21 @@
   @include input-style;
 }
 
+.button {
+  transition: all .3s linear;
+  
+  &--language {
+    border: 1px solid #000000;
+    padding: 5px;
+    border-radius: 10px;
+    opacity: .5;
+
+    &--active {
+      opacity: 1;
+    }
+  }
+}
+
 
 //Vue transition
 .v-enter-active,

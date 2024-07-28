@@ -2,11 +2,36 @@
   "authorization": {
     "title": "Enter in your account",
     "form": {
-      "login": "login",
-      "password": "password",
+      "login": "Login",
+      "password": "Password",
       "button": "Login",
       "message": "Haven't account?",
       "registration_link": "Go registration now!"
+    },
+    "messages" : {
+      "invalid-login": "Invalid login",
+      "invalid-password": "Invalid password",
+      "success": "Welcome"
     }
-  }
+  },
+  "registration": {
+    "title": "Create your accout",
+    "form": {
+      "login": "Login",
+      "name":"Name",
+      "password": "Password",
+      "password-repeat": "Repeat password",
+      "password-hint": "More than 6 chars",
+      "button": "Registration",
+      "message": "Did you have an account?",
+      "authorization_link": "Log in"
+    },
+    "messages" : {
+      "invalid-login": "Invalid login",
+      "invalid-name": "Invalid name",
+      "invalid-password": "Invalid password",
+      "invalid-password-repeat": "Passwords don't match",
+      "success": "Welcome"
+    }
+    }
 }
